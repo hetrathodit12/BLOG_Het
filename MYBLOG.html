@@ -1,0 +1,204 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Cybersecurity – Dark Luxury Edition</title>
+
+  <script src="https://cdn.tailwindcss.com"></script>
+
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@500;600;700&family=Inter:wght@300;400;500&display=swap" rel="stylesheet" />
+
+  <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          fontFamily: {
+            playfair: ["Playfair Display", "serif"],
+            inter: ["Inter", "sans-serif"],
+          },
+          colors: {
+            gold: "#d4af37",
+            darkBlack: "#0a0a0a",
+            deepGray: "#1a1a1a",
+          },
+        },
+      },
+    };
+  </script>
+
+  <style>
+    body {
+      background: #0a0a0a;
+      color: #d4d4d4;
+    }
+
+    .lux-card {
+      border: 1px solid rgba(212, 175, 55, 0.25);
+      background: rgba(255, 255, 255, 0.02);
+      backdrop-filter: blur(6px);
+      box-shadow: 0 0 25px rgba(212, 175, 55, 0.12);
+    }
+
+    .animate-on-scroll {
+      opacity: 0;
+      transform: translateY(18px);
+      transition: all 0.7s ease;
+    }
+    .animate-on-scroll.show {
+      opacity: 1;
+      transform: translateY(0);
+    }
+
+    .lux-divider {
+      height: 1px;
+      background: linear-gradient(to right, transparent, #d4af37, transparent);
+    }
+
+    .hero-img {
+      filter: brightness(0.8) contrast(1.1);
+    }
+  </style>
+</head>
+
+<body class="font-inter px-4 py-10">
+
+  <main class="max-w-4xl mx-auto">
+
+    <!-- HEADER IMAGE -->
+    <div class="rounded-xl overflow-hidden shadow-2xl border border-gold/20">
+      <img src="hettt.webp" class="w-full h-72 object-cover hero-img" />
+    </div>
+
+    <!-- TITLE -->
+    <header class="mt-10 animate-on-scroll">
+      <p class="text-gold tracking-widest uppercase text-sm">Cybersecurity</p>
+
+      <h1 class="text-4xl sm:text-5xl font-playfair text-gold mt-2 leading-tight">
+        How Cybersecurity Protects Our Digital World
+      </h1>
+
+      <p class="text-gray-400 mt-3">By Het Rathod | Published: November 15, 2025</p>
+    </header>
+
+    <div class="lux-divider my-10"></div>
+
+    <!-- INTRO -->
+    <section class="space-y-8 animate-on-scroll">
+      <h2 class="text-3xl font-playfair text-gold">Introduction</h2>
+      <p class="leading-relaxed text-lg">
+        In today's fast-growing digital era, almost everything we do happens online. While technology brings convenience,
+        it also opens doors to cyber threats. Cybersecurity ensures safety, privacy, and trust in the digital world.
+      </p>
+
+      <h2 class="text-3xl font-playfair text-gold">What Is Cybersecurity?</h2>
+      <p class="leading-relaxed text-lg">
+        Cybersecurity involves technologies and practices designed to protect computers, networks, and data from attacks
+        such as hacking, phishing, malware, and identity theft.
+      </p>
+    </section>
+
+    <!-- QUOTE -->
+    <div class="my-12 animate-on-scroll">
+      <div class="lux-card p-10 rounded-2xl text-center">
+        <p class="text-gold font-playfair text-2xl italic">
+          "Cybersecurity is not just a technical term — it is a necessity for modern life."
+        </p>
+      </div>
+    </div>
+
+    <!-- MAIN CONTENT -->
+    <section class="space-y-12 animate-on-scroll">
+
+      <!-- IMPORTANCE -->
+      <div>
+        <h3 class="text-2xl font-playfair text-gold mb-4">Why Is Cybersecurity Important?</h3>
+
+        <div class="lux-card p-6 rounded-xl">
+          <ul class="list-disc list-inside space-y-3 text-lg marker:text-gold">
+            <li><b class="text-gold">Protects Personal Data:</b> Secures photos, passwords, and banking details.</li>
+            <li><b class="text-gold">Maintains Trust:</b> Ensures safe online shopping and transactions.</li>
+            <li><b class="text-gold">Prevents Financial Loss:</b> Reduces risks for individuals and businesses.</li>
+            <li><b class="text-gold">Protects Infrastructure:</b> Secures hospitals, airports, and power systems.</li>
+          </ul>
+        </div>
+      </div>
+
+      <!-- THREATS -->
+      <div>
+        <h3 class="text-2xl font-playfair text-gold mb-4">Common Cyber Threats</h3>
+
+        <div class="lux-card p-6 rounded-xl">
+          <ul class="list-disc list-inside space-y-3 text-lg marker:text-gold">
+            <li><b class="text-gold">Phishing:</b> Fake messages used to steal sensitive data.</li>
+            <li><b class="text-gold">Malware:</b> Harmful software that damages systems.</li>
+            <li><b class="text-gold">Ransomware:</b> Locks data and demands payment.</li>
+            <li><b class="text-gold">Social Engineering:</b> Manipulates people into revealing confidential info.</li>
+          </ul>
+        </div>
+      </div>
+
+      <!-- HOW IT WORKS -->
+      <div>
+        <h3 class="text-2xl font-playfair text-gold mb-4">How Cybersecurity Works</h3>
+
+        <div class="lux-card p-6 rounded-xl">
+          <ul class="list-disc list-inside space-y-3 text-lg marker:text-gold">
+            <li><b class="text-gold">Firewalls:</b> Block unauthorized access.</li>
+            <li><b class="text-gold">Antivirus:</b> Detects and removes harmful programs.</li>
+            <li><b class="text-gold">Encryption:</b> Protects stolen data by making it unreadable.</li>
+            <li><b class="text-gold">MFA:</b> Adds extra login security layers.</li>
+            <li><b class="text-gold">Regular Updates:</b> Fix vulnerabilities.</li>
+          </ul>
+        </div>
+      </div>
+
+      <!-- SAFETY TIPS -->
+      <div>
+        <h3 class="text-2xl font-playfair text-gold mb-4">How We Can Stay Safe Online</h3>
+
+        <div class="lux-card p-6 rounded-xl">
+          <ul class="list-disc list-inside space-y-3 text-lg marker:text-gold">
+            <li>Use strong passwords</li>
+            <li>Avoid suspicious links</li>
+            <li>Update your software regularly</li>
+            <li>Back up important data</li>
+            <li>Share less personal information online</li>
+          </ul>
+        </div>
+      </div>
+
+    </section>
+
+    <!-- CONCLUSION -->
+    <section class="mt-12 animate-on-scroll">
+      <h2 class="text-3xl font-playfair text-gold mb-4">Conclusion</h2>
+      <p class="text-lg leading-relaxed">
+        Cybersecurity is essential in today's digital world. By following safe practices and staying aware of online
+        threats, we can enjoy technology with confidence and security.
+      </p>
+    </section>
+
+    <footer class="text-center mt-14 text-gray-500 text-sm tracking-wide">
+      © 2025 Het Rathod (DDCE04)
+    </footer>
+
+  </main>
+
+<script>
+  document.addEventListener("DOMContentLoaded", () => {
+    const elements = document.querySelectorAll(".animate-on-scroll");
+    const observer = new IntersectionObserver((entries) => {
+      entries.forEach(entry => {
+        if (entry.isIntersecting) entry.target.classList.add("show");
+      });
+    }, { threshold: 0.2 });
+
+    elements.forEach(el => observer.observe(el));
+  });
+</script>
+
+</body>
+</html>
